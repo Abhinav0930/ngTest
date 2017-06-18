@@ -1,0 +1,13 @@
+<h1>
+
+  <ul>
+    <li *ngFor="let hero of heroes" (click)="onClickHero(hero)" 
+    [class.selected]="hero === selectedHero">{{hero.name}}</li>
+  </ul>
+
+<app-display-user [hero]="selectedHero"></app-display-user>
+
+  <!--{{title}} {{hero1.name}}<br/>-->
+
+  <!--<input [(ngModel)]="hero1.name" placeholder="name">-->
+</h1>
