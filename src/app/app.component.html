@@ -1,13 +1,23 @@
 <h1>
 
-  <ul>
+  <!--{{name}}-->
+  <!--<ul>
     <li *ngFor="let hero of heroes" (click)="onClickHero(hero)" 
     [class.selected]="hero === selectedHero">{{hero.name}}</li>
-  </ul>
+  </ul>-->
 
-<app-display-user [hero]="selectedHero"></app-display-user>
+<!--<app-display-user [hero]="selectedHero"></app-display-user>-->
 
   <!--{{title}} {{hero1.name}}<br/>-->
 
   <!--<input [(ngModel)]="hero1.name" placeholder="name">-->
+
+  <!--<app-bootstrap-examples> </app-bootstrap-examples>-->
+
+  <!--<app-observables></app-observables>-->
+  <nav> 
+  <a routerLink="/myUsers"> click me for users </a>
+  <a routerLink="/dashboard"> click me for dashboard </a>
+  </nav>
+  <router-outlet></router-outlet>
 </h1>

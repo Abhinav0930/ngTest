@@ -1,0 +1,3 @@
+<a *ngFor="let hero of activeHeroes" [routerLink]="['/detail',hero.id]">
+  <li> {{hero.name}} </li>  
+</a>

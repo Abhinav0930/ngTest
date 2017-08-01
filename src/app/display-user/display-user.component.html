@@ -1,7 +1,10 @@
 <div *ngIf="hero">
-<h3> Selected hero</h3> <br/>
-{{hero.name}}
+<h3> Selected hero {{hero.name}}</h3> <br/>
 
-Edit this name:- <input [(ngModel)]="hero.name"/>
+
+Edit this name:- <input [(ngModel)]="hero.name"/><br/>
+
+<button (click)="goBack()">Back</button>
+
 </div>
 
